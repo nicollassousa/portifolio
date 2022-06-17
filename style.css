@@ -28,6 +28,7 @@ h1{
     text-shadow: 2px 2px 0px #0000003d;
 }
 main{
+    background-image:url(.imgv617batch2-kul-05-technology);
     display: flex;
     height: 100vh;
 }
@@ -37,6 +38,7 @@ article{
 p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1em;
+    margin-left: -150px;
 }
 
 
