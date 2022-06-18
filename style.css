@@ -6,39 +6,34 @@
 html, body{
     width: 100vw;
     height: 100vw;
+    
 }
-header{
-    display: flex;
-    text-align: center;
-    margin-top: 100px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    /*background-color: #8a2be2;*/
-    min-height:150px;   
+.logo a{
+    color: #ffffff;
 }
-
-header > h1{
-    margin-right: 200px;
-    max-width: 300px;
+.logo{
+    padding: 0 80px;
     margin: auto;
 }
-h1{
-    /*background-color: #8a2be2;*/
-    border-radius: 5px;
-    text-shadow: 2px 2px 0px #0000003d;
-}
-main{
-    background-image:url(.imgv617batch2-kul-05-technology);
+
+.menu{
     display: flex;
-    height: 100vh;
-}
-article{
-    margin: 0 auto;
-}
-p{
+    background-color: #224fe4f1;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.1em;
-    margin-left: -150px;
+    /*background-color: #8a2be2;*/
+    width: 100vw;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+ul li{
+    color: #fff;
+    margin: 10px;
 }
 
 
