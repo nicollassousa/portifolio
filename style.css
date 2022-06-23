@@ -1,13 +1,18 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 *{
     padding: 0;
-    margin: 0; 
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: #262425;
+    
 }
 html, body{
     width: 100vw;
     height: 100vw;
-    
 }
+/*navbar inicio*/
 .logo a{
     color: #ffffff;
 }
@@ -18,9 +23,10 @@ html, body{
 
 .menu{
     display: flex;
-    background-color: #224fe4f1;
-    font-family: Arial, Helvetica, sans-serif;
-    /*background-color: #8a2be2;*/
+    /*background-color: #6D67FE;*/
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    padding: 30px 0;
     width: 100vw;
 }
 
@@ -33,8 +39,39 @@ ul{
 }
 ul li{
     color: #fff;
-    margin: 10px;
+    padding: 15px;
+    margin-right: 10px;
 }
+/*home inicio*/
+.home{
+    display: flex;
+    background: url(img/img2.png) no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Press Start 2P', cursive;
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+font-size: 20px;
+}
+.home .home-content .text-2{
+    font-size: 25px;
+    font-weight:700;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+font-size: 20px;
+margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: #6D67FE;
+    font-weight: 700;
+}
+
+
 
 
 footer{
