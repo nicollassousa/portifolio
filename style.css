@@ -68,19 +68,23 @@
 .home .home-content .text-1{
     font-size: 1.1em;
 }
+
 .home .home-content .text-2{
     font-size: 1.6em;
     font-weight:700;
     margin-left: -3px;
 }
+
 .home .home-content .text-3{
     font-size: 1.5em;
     margin: 5px 0;
 }
+
 .home .home-content .text-3 span{
     color: #6D67FE;
     font-weight: 700;
 }
+
 .home .home-content a{
     display: inline-block;
     background: #6D67FE;
@@ -92,6 +96,7 @@
     border: 2px solid #6D67FE;
     transition: color 0.3s;
 }
+
 .home .home-content a:hover{
     color: #6D67FE;
     background:none;
@@ -104,17 +109,21 @@
     cursor: pointer;
     display: none;
 }
+
 /*Responsivo*/
 @media (max-width: 1104px){
     .navbar .max-width{
         margin-left: 0;
     }
 }
+
 @media (max-width: 991px){
     .navbar .max-width{
         padding: 0 50px;
+       
     }
 }
+
 @media (max-width: 947px){
     .max-width{
         padding: 0 50px;
@@ -122,6 +131,7 @@
     .menu-btn{
         display: block;
         z-index: 999;
+        
     }
     .navbar .menu{
         position: fixed;
@@ -156,7 +166,9 @@
     font-size: 1.5em;
     }
 }
+
 @media (max-width: 690px){
+    
     .home .home-content .text-2{
         font-size: 1.5em;
         
@@ -165,12 +177,17 @@
     font-size: 1.4em;
     }
 }
+
 @media (max-width: 500px){
+    
     .home .home-content .text-2{
         font-size: 1.4em;
     }
     .home .home-content .text-3{
     font-size: 1.3em;
+    }
+    .menu-btn{
+        padding: 10px;
     }
 }
 
@@ -181,3 +198,10 @@ footer{
     text-align: center;
     background-color: #8a2be2;
 }
+/* Botão Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>*/
