@@ -5,7 +5,11 @@ $(document).ready(function(){
         }else{
             $(".navbar").removeClass("sticky");
         }
-        function displayDate()
-            document.getElementById("demo").innerHTML = Date();
-    });
+    })
 });
+var menuBar = document.querySelector('.menu-btn a .icon-menu');
+
+menuBar.addEventListener('clik',(e)=>{ 
+e.preventDefault();
+let menuBtn = document.querySelector('.menu-btn ul');
+menuBtn.classList.add('.show-menu');});

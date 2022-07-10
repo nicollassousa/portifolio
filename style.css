@@ -103,7 +103,7 @@
 }
 
 /*Menu Mobile*/
-.menu-btn{
+.menu-btn {
     color: #000;
     font-size: 25px;
     cursor: pointer;
@@ -128,6 +128,18 @@
 }
 
 @media (max-width: 947px){
+    .menu-btn{
+        color: #000;
+        font-size: 25px;
+        cursor: pointer;
+        display: block ;
+    }
+    .menu-btn li{
+        display: none;
+        font-size: .5em;
+        list-style: none;
+        padding-top: 15px;
+    }
     .menu-btn{
         display: block;
         z-index: 999; 
@@ -172,6 +184,18 @@
 }
 
 @media (max-width: 690px){
+    .menu-btn{
+        color: #000;
+        font-size: 25px;
+        cursor: pointer;
+        display: block ;
+    }
+    .menu-btn li{
+        display: none;
+        font-size: .5em;
+        list-style: none;
+        padding-top: 15px;
+    }
     
     .home .home-content .text-2{
         font-size: 1.5em;
@@ -192,7 +216,18 @@
         font-size: 25px;
         cursor: pointer;
         display: block;
-        button:onclick="displayDate()
+    }
+    .show-menu{
+        opacity: 1 !important;
+    }
+    
+    .menu-btn ul{
+        font-size: .5em;
+        list-style: none;
+        padding-top: 15px;
+        opacity: 0;
+        transition: 1s;
+        position: absolute;
     }
     
     
@@ -202,22 +237,5 @@
     .home .home-content .text-3{
     font-size: 1.3em;
     }
-    .menu-btn{
-        padding: 10px;
-    }
+    
 }
-
-
-
-footer{
-    width: 100%;
-    text-align: center;
-    background-color: #8a2be2;
-}
-/* Botão Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
-</div>*/
