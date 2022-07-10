@@ -5,5 +5,7 @@ $(document).ready(function(){
         }else{
             $(".navbar").removeClass("sticky");
         }
+        function displayDate()
+            document.getElementById("demo").innerHTML = Date();
     });
 });

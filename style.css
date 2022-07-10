@@ -104,17 +104,19 @@
 
 /*Menu Mobile*/
 .menu-btn{
-    color: #fff;
+    color: #000;
     font-size: 25px;
     cursor: pointer;
     display: none;
 }
+
 
 /*Responsivo*/
 @media (max-width: 1104px){
     .navbar .max-width{
         margin-left: 0;
     }
+    
 }
 
 @media (max-width: 991px){
@@ -122,17 +124,19 @@
         padding: 0 50px;
        
     }
+    
 }
 
 @media (max-width: 947px){
+    .menu-btn{
+        display: block;
+        z-index: 999; 
+    }
+    
     .max-width{
         padding: 0 50px;
     }
-    .menu-btn{
-        display: block;
-        z-index: 999;
-        
-    }
+    
     .navbar .menu{
         position: fixed;
         width: 100%;
@@ -179,6 +183,18 @@
 }
 
 @media (max-width: 500px){
+    .menu-btn{
+        display: block;
+        z-index: 999; 
+    }
+    .menu-btn{
+        color: #000;
+        font-size: 25px;
+        cursor: pointer;
+        display: block;
+        button:onclick="displayDate()
+    }
+    
     
     .home .home-content .text-2{
         font-size: 1.4em;
