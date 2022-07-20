@@ -59,7 +59,7 @@
 /*home inicio*/
 .home{
     display: flex;
-    background: url(img/img1.png) no-repeat center;
+    background: url(/img/logo.png) no-repeat center;
     height: 100vh;
     min-height: 500px;
     font-family: 'Source Sans Pro', sans-serif;
@@ -111,6 +111,7 @@
     cursor: pointer;
     display: none;
 }
+
 /*Todos os codigos similares*/
 section{
     padding: 100px 0;
@@ -145,20 +146,17 @@ section .title::after{
     padding: 1px;
     transform: translateX(-50%);
 }
-
-/*Seção Sobre*/
-section{
-    padding: 100px 0;
-}
-.about, .services{
+.about, .services, .skills{
     font-family: 'Source Sans Pro', sans-serif;
 }
-.about .about-content, .services .serv-content{
+.about .about-content, .services .serv-content, .skills, .skills-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
+/*Seção Sobre*/
+
 .about .title::after{
     content:"Quem sou eu" ;
 }
@@ -246,6 +244,14 @@ section{
     margin: 10px 0 7px 0;
 
 }
+/*Sessão Especialidades*/
+.skills .title:after{
+    content: "Fazemos";
+}
+.skill .skill-content .column{
+    width: calc(50% - 30px);
+}
+
 /*Responsivo*/
 @media (max-width: 1300px){
     .navbar .max-width{
