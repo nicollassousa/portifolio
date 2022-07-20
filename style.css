@@ -59,7 +59,7 @@
 /*home inicio*/
 .home{
     display: flex;
-    background: url(img/img1.png) no-repeat center;
+    background: url(/img/logo.png) no-repeat center;
     height: 100vh;
     min-height: 500px;
     font-family: 'Source Sans Pro', sans-serif;
@@ -111,11 +111,25 @@
     cursor: pointer;
     display: none;
 }
+<<<<<<< HEAD
+
 /*Todos os codigos similares*/
+=======
+/*Seção Sobre*/
+>>>>>>> parent of 1001851 (Portifólio15)
 section{
     padding: 100px 0;
 }
-section .title{
+.about{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .title{
     font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
     font-weight:500;
@@ -125,7 +139,7 @@ section .title{
     position: relative;
     
 }
-section .title::before{
+.about .title::before{
     content: "";
     position: absolute;
     bottom: 0;
@@ -135,7 +149,8 @@ section .title::before{
     background: #111;
     transform: translateX(-50%);
 }
-section .title::after{
+.about .title::after{
+    content: "Quem sou eu";
     position: absolute;
     bottom: -9px;
     font-size: 20px;
@@ -145,23 +160,23 @@ section .title::after{
     padding: 1px;
     transform: translateX(-50%);
 }
-
-/*Seção Sobre*/
-section{
-    padding: 100px 0;
-}
-.about, .services{
+<<<<<<< HEAD
+.about, .services, .skills{
     font-family: 'Source Sans Pro', sans-serif;
 }
-.about .about-content, .services .serv-content{
+.about .about-content, .services .serv-content, .skills, .skills-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
+/*Seção Sobre*/
+
 .about .title::after{
     content:"Quem sou eu" ;
 }
+=======
+>>>>>>> parent of 1001851 (Portifólio15)
 .about .about-content .left{
     width: 45%;
 }
@@ -202,50 +217,19 @@ section{
     object-fit: cover;
     border-radius: 6px;
 }
-/*Sessão serviços*/
-.services{
-    background: #111;
-    color: #fff;
-}
-.services .title::before{
-    background: #fff;
-}
-.services .title::after{
-    background: #111;
-    content: "Que oferecemos";
-}
-.services .serv-content .card{
-    width: calc(33% - 20px);
-    background: #222;
-    text-align: center;
-    border-radius: 6px;
-    padding: 20px 25px;
-    margin: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.services .serv-content .card:hover{
-    background: #6D67FE;
-}
-.services .serv-content .card .box{
-    transition: all 0.3s ease;
-}
-.services .serv-content .card:hover .box{
-    transform: scale(1.05);
-}
-.services .serv-content .card ion-icon{
-    font-size: 60px;
-    color: #6D67FE;
-}
-.services .serv-content .card:hover ion-icon{
-    color: #fff;
-} 
-.services .serv-content .card .text{
-    font-size: 25px;
-    font-weight: 400;
-    margin: 10px 0 7px 0;
 
+<<<<<<< HEAD
 }
+/*Sessão Especialidades*/
+.skills .title:after{
+    content: "Fazemos";
+}
+.skill .skill-content .column{
+    width: calc(50% - 30px);
+}
+
+=======
+>>>>>>> parent of 1001851 (Portifólio15)
 /*Responsivo*/
 @media (max-width: 1300px){
     .navbar .max-width{
@@ -353,18 +337,6 @@ section{
     .about .about-content .column{
         width: 50%;
     }
-    .about .about-content .left{
-        display: flex;
-        justify-content: center;
-        margin: 0px auto 60px;
-    }
-    .about .about-content .right{
-        flex: 100%;
-    }
-    .services .serv-content .card{
-        width: calc(50% - 10px);
-        margin-bottom: 20px;
-    }
 }
 @media (max-width: 690px){
     .home{
@@ -395,10 +367,6 @@ section{
 
     .home .home-content .text-3{
     font-size: 1.4em;
-    }
-    .services .serv-content .card{
-        width: 100%;
-        
     }
 }
 @media (max-width: 500px){
