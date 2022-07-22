@@ -30,16 +30,17 @@
     display: flex;
     align-items:center;
     justify-content: space-between;
+    left: 100px;
 }
 .navbar .logo a{
-    color: #262425;
+    color: #000;
     font-weight: 500;
 }
 .navbar .logo a span{
-    color: #262425;
+    color: #6D67FE;
 }
 .navbar.sticky .logo a span{
-    color: #262425;
+    color: #000000;
     transition: color 0.3s ease;
 }
 
@@ -111,12 +112,10 @@
     cursor: pointer;
     display: none;
 }
-<<<<<<< HEAD
 
 /*Todos os codigos similares*/
-=======
 /*Seção Sobre*/
->>>>>>> parent of 1001851 (Portifólio15)
+
 section{
     padding: 100px 0;
 }
@@ -160,7 +159,7 @@ section{
     padding: 1px;
     transform: translateX(-50%);
 }
-<<<<<<< HEAD
+
 .about, .services, .skills{
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -175,8 +174,6 @@ section{
 .about .title::after{
     content:"Quem sou eu" ;
 }
-=======
->>>>>>> parent of 1001851 (Portifólio15)
 .about .about-content .left{
     width: 45%;
 }
@@ -218,8 +215,6 @@ section{
     border-radius: 6px;
 }
 
-<<<<<<< HEAD
-}
 /*Sessão Especialidades*/
 .skills .title:after{
     content: "Fazemos";
@@ -227,9 +222,6 @@ section{
 .skill .skill-content .column{
     width: calc(50% - 30px);
 }
-
-=======
->>>>>>> parent of 1001851 (Portifólio15)
 /*Responsivo*/
 @media (max-width: 1300px){
     .navbar .max-width{
@@ -320,7 +312,7 @@ section{
 
     .navbar .logo a{
         display: block;
-        color: #fff;
+        color: #000;
     }
 
     .home .home-content .text-2{
