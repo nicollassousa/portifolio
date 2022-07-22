@@ -222,6 +222,14 @@ section{
 .skill .skill-content .column{
     width: calc(50% - 30px);
 }
+/*Sessão Especialidades*/
+.skills .title:after{
+    content: "Fazemos";
+}
+.skill .skill-content .column{
+    width: calc(50% - 30px);
+}
+
 /*Responsivo*/
 @media (max-width: 1300px){
     .navbar .max-width{
