@@ -33,7 +33,7 @@
     left: 100px;
 }
 .navbar .logo a{
-    color: #000;
+    color: #fff;
     font-weight: 500;
 }
 .navbar .logo a span{
@@ -41,7 +41,7 @@
 }
 .navbar.sticky .logo a span{
     color: #000000;
-    transition: color 0.3s ease;
+    transition: color 0.5s ease;
 }
 
 .navbar .menu li{
@@ -50,7 +50,7 @@
     margin: 0 10px;
 }
 .navbar .menu li {
-    color: #000;
+    color: #fff;
     transition: color 0.3s ease;
 }
 .navbar .menu li:hover{
@@ -60,27 +60,30 @@
 /*home inicio*/
 .home{
     display: flex;
-    background: url(/img/logo.png) no-repeat center;
-    height: 100vh;
+    background: url(/img/img7.jpg) no-repeat center fixed;
+    background-size: cover;
+    height: 101vh;
     min-height: 500px;
+    
     font-family: 'Source Sans Pro', sans-serif;
 }
 .home .max-width{
+    color: #fff;
     margin: auto 0 auto 40px;
 }
 .home .home-content .text-1{
-    font-size: 1.4em;
+    font-size: 1.6em;
 }
 
 .home .home-content .text-2{
-    font-size: 2em;
+    font-size: 3em;
     font-weight: 700;
     margin-left: -3px;
 }
 
 .home .home-content .text-3{
-    font-size: 1.5em;
-    margin: 5px 0;
+    font-size: 1.6em;
+    
 }
 
 .home .home-content .text-3 span{
@@ -266,9 +269,7 @@ section{
     
 }
 @media (max-width: 947px){
-    .home{
-        background-image: none;
-    }
+    
     .menu-btn{
         color: #000;
         font-size: 25px;
@@ -322,9 +323,12 @@ section{
         display: block;
         color: #000;
     }
-
     .home .home-content .text-2{
         font-size: 1.6em;
+    }
+
+    .home .home-content .text-2{
+        font-size: 1.7em;
     }
 
     .home .home-content .text-3{
@@ -339,9 +343,7 @@ section{
     }
 }
 @media (max-width: 690px){
-    .home{
-        background-image: none;
-    }
+    
     .menu-btn{
         color: #000;
         font-size: 25px;
@@ -359,20 +361,21 @@ section{
         font-size: 1em;
         padding: 10px 35px;
     }
+    .home .home-content .text-1{
+        font-size: 1.6em;
+    }
     
     .home .home-content .text-2{
-        font-size: 1.5em;
+        font-size: 1.7em;
         
     }
 
     .home .home-content .text-3{
-    font-size: 1.4em;
+    font-size: 1.5em;
     }
 }
 @media (max-width: 500px){
-    .home{
-        background-image: none;
-    }
+    
     .menu-btn{
         display: block;
         z-index: 999; 
@@ -398,13 +401,16 @@ section{
         font-size: .9em;
         padding: 10px 30px;
     }
+    .home .home-content .text-1{
+        font-size: 1.6em;
+    }
     
     .home .home-content .text-2{
-        font-size: 1.4em;
+        font-size: 1.7em;
     }
 
     .home .home-content .text-3{
-    font-size: 1.3em;
+    font-size: 1.5em;
     }
     
 }
