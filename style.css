@@ -63,7 +63,7 @@
 /*home inicio*/
 .home{
     display: flex;
-    background: url(/img/img8.jpg) no-repeat center fixed;
+    background: url(img/img8.jpg) no-repeat center fixed;
     background-size: cover;
     height: 101vh;
     min-height: 500px;
