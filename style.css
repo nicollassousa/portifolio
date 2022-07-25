@@ -120,21 +120,10 @@
 }
 
 /*Todos os codigos similares*/
-/*Seção Sobre*/
-
 section{
     padding: 100px 0;
 }
-.about{
-    font-family: 'Source Sans Pro', sans-serif;
-}
-.about .about-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-.about .title{
+section .title{
     font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
     font-weight:500;
@@ -144,7 +133,7 @@ section{
     position: relative;
     
 }
-.about .title::before{
+section .title::before{
     content: "";
     position: absolute;
     bottom: 0;
@@ -154,8 +143,7 @@ section{
     background: #111;
     transform: translateX(-50%);
 }
-.about .title::after{
-    content: "Quem sou eu";
+section .title::after{
     position: absolute;
     bottom: -9px;
     font-size: 20px;
@@ -165,16 +153,16 @@ section{
     padding: 1px;
     transform: translateX(-50%);
 }
-
 .about, .services, .skills{
     font-family: 'Source Sans Pro', sans-serif;
 }
-.about .about-content, .services .serv-content, .skills, .skills-content{
+.about .about-content, .services .serv-content, .skills, .skills-conten{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
+
 /*Seção Sobre*/
 
 .about .title::after{
@@ -221,19 +209,75 @@ section{
     border-radius: 6px;
 }
 
-/*Sessão Especialidades*/
-.skills .title:after{
-    content: "Fazemos";
+/*Sessão Serviços*/
+
+.services{
+    background-color: #111;
+    color: #fff;
+}
+.services .title:before{
+    background: #fff;
+}
+.services .title:after{
+    background-color: #111;
+    content: "Que oferemos";
+}
+.services .serv-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover{
+    background: #6D67FE;
+}
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.services .serv-content .card ion-icon {
+    font-size: 50px;
+    color: #6D67FE;
+}
+.services .serv-content .card:hover ion-icon{
+    color: #fff;
+}
+.services .serv-content .card .text{
+    font-size: 1.5em;
+    font-weight: 400;
+    margin: 10px 0 7px 0;
 }
 .skill .skill-content .column{
     width: calc(50% - 30px);
 }
+
 /*Sessão Especialidades*/
+
 .skills .title:after{
-    content: "Fazemos";
+    content: "Habilidades";
 }
-.skill .skill-content .column{
+.skills .skills-content .column{
     width: calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right .span{
+    font-size: 2em;
 }
 
 /*Responsivo*/
@@ -293,6 +337,7 @@ section{
     }
     
     .max-width{
+        max-width: 800px;
         padding: 0 50px;
     }
     
@@ -344,6 +389,18 @@ section{
     .about .about-content .column{
         width: 50%;
     }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+    .services .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
 }
 @media (max-width: 690px){
     
@@ -375,6 +432,9 @@ section{
 
     .home .home-content .text-3{
     font-size: 1.5em;
+    }
+    .services .serv-content .card{
+        width: 100%;
     }
 }
 @media (max-width: 500px){
