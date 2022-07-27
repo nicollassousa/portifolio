@@ -53,11 +53,15 @@
     margin: 0 10px;
 }
 .navbar .menu li {
-    color: #fff;
+    color: #6D67FE;
     transition: color 0.3s ease;
 }
 .navbar .menu li:hover{
     color: #262425;
+}
+.navbar.sticky .menu li{
+    color: #000000;
+    transition: color 0.5s ease;
 }
 
 /*home inicio*/
@@ -440,12 +444,7 @@ section .title::after{
 @media (max-width: 500px){
     
     .menu-btn{
-        display: block;
-        z-index: 999; 
-    }  
-
-    .menu-btn{
-        color: #000;
+        color: #6D67FE;
         font-size: 25px;
         cursor: pointer;
         display: block;
